@@ -3,7 +3,7 @@
     --color-grey: hsl(0, 0%, 20%);
     --color-darkgrey: hsl(0, 0%, 12%);
     --color-offblack: hsl(0, 0%, 8%);
-    --color-aqua: hsl(167, 94%, 57%);
+    --color-orange: hwb(27 21% 0%);
 }
 
 * {
@@ -19,6 +19,21 @@ html {
     color: var(--color-white);
 }
 
+a {
+    color: var(--color-white);
+}
+
+a:hover {
+    opacity: .8;
+}
+
+a:visited {
+    color: var(--color-orange);
+}
+
+a:active {
+    color: var(--color-orange);
+}
 
 .main-nav-container {
     width: 100%;
@@ -26,21 +41,22 @@ html {
     background-color: var(--color-darkgrey)
 }
 
-.nav-links {
+#nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem;
-    color: var(--color-aqua);
+    color: var(--color-orange);
     font-family: "Manrope", Arial, sans-serif;
     font-weight: 700;
+    margin-bottom: 100px; 
 }
 
-.nav-links p {
+#nav-links span {
     padding: 10px; 
 }
 
-.nav-links p:hover {
+#nav-links span:hover {
     cursor: pointer;
     opacity: 0.7;
     transition: ease-in .3s;
@@ -48,4 +64,64 @@ html {
     text-decoration: underline;
     text-decoration-color: var(--color-white);
 
+}
+
+.typing-text1, .typing-text2, .typing-text3 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    width: 0;
+    display: inline-block;
+}
+
+.active {
+    visibility: show;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.main-container {
+    height: auto;
+    width: 80%;
+    background-color: var(--color-darkgrey);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.header-container {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 2fr 5fr 1fr;
+    justify-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.header-container h1 {
+    color: var(--color-white);
+    font-family: "Oswald", Arial, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: var(--color-orange);
+    padding-bottom: 15px;
+}
+.header-container img {
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid var(--color-orange)
+}
+
+.socials {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+.socials ul {
+    display: flex;
+    justify-content: space-between;
 }
