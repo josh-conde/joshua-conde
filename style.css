@@ -15,7 +15,7 @@
 html {
     background: var(--color-offblack);
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.6;
     color: var(--color-white);
 }
 
@@ -33,6 +33,16 @@ a:visited {
 
 a:active {
     color: var(--color-orange);
+}
+
+i {
+    background-color: var(--color-grey);
+    padding: 5px;
+    border-radius: 12px;
+}
+
+i:hover {
+    background-color: var(--color-orange);
 }
 
 .main-nav-container {
@@ -124,4 +134,16 @@ a:active {
 .socials ul {
     display: flex;
     justify-content: space-between;
+}
+
+#about-container {
+    padding: 10px; 
+    font-family: "Manrope", Arial, sans-serif;
+}
+
+#about-container div {
+    background-color: var(--color-grey);
+    border-radius: 12px;
+    margin: 10px 0; 
+    padding: 10px; 
 }
