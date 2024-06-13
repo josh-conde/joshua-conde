@@ -44,11 +44,31 @@
                 <p>Feel free to connect with me and follow along on my journey as I continue to grow and make my mark in the tech field.</p>
             </div>
         </div>
-        <div id="work-container" class="hidden">
+        <div id="work-container" class="active">
 
         </div>
-        <div id="contact-container" class="hidden">
-
+        <div id="contact-container" class="active">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-123-1234" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@email.com" required>
+                
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" placeholder="Leave a comment"></textarea>
+                
+                <input type="submit" value="Submit">
+                <div id="error" class="error"></div>
+                <div id="success" class="success"></div>
+            </form>
         </div>
     </main>
 </body>
