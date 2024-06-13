@@ -160,10 +160,6 @@ i:hover {
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    overflow: auto;
 
-}
-
-#error {
-    color: red;
-    font-size: .8rem;
 }
