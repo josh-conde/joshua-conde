@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-:root {
-    --color-primary: #66FCF1;
-    --color-secondary: #45A29E;
-    --color-darkprimary: #0B0C10;
-    --color-darksecondary: #1F2833;
-    --color-light: #C5C6C7;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap');:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-darkgrey: hsl(0, 0%, 12%);
+    --color-offblack: hsl(0, 0%, 8%);
+    --color-aqua: hsl(167, 94%, 57%);
 }
 
 * {
@@ -14,76 +13,39 @@
 }
 
 html {
-    background: var(--color-light);
+    background: var(--color-offblack);
     font-size: 18px;
     line-height: 1.4;
+    color: var(--color-white);
 }
 
-h1 {
-    color: var(--color-primary);
-    font-weight: 700;
-    font-family: "Open Sans", Arial, sans-serif;
-    text-align: center;
-}
 
-h2 {
-    color: var(--color-secondary);
-    font-weight: 400;
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: .8rem;
-}
-
-p {
-    color: var(--color-darkprimary);
-    font-size: 1.1rem;
-    font-family: "Cambay", Arial, sans-serif;
-}
-
-ul {
-    list-style: none;
-    font-family: "Open Sans", Arial, sans-serif;
-    color: var(--color-darksecondary);
-    font-weight: 700;
-    text-decoration-line: underline;
-    text-decoration-color: var(--color-primary);
-}
-
-li {
-    display: inline;
-}
-
-.header-container {
+.main-nav-container {
     width: 100%;
-    margin-bottom: 50px;
-}
-.main-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    margin: 0 auto;
-    padding: 15px;
-    width: 800px;
-    max-width: 100%;
-    border-radius: 8px;
+    height: auto;
+    background-color: var(--color-darkgrey)
 }
 
-.right-container img {
-    width: 450px;
-    height: 650px;
-    border-radius: 8px;
-    border:4px solid #45A29E;
-}
-.left-container {
-    background: var(--color-darksecondary);
-    border-radius: 8px;
-    padding: 45px;
-}
-.left-container h1 {
-    padding: 0 15px;
-    border-radius: 75%;
-    margin: 0 10px;
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    color: var(--color-aqua);
+    font-family: "Manrope", Arial, sans-serif;
+    font-weight: 700;
 }
 
+.nav-links p {
+    padding: 10px; 
+}
 
-.left-container h2 {
-    text-align: center;
+.nav-links p:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: ease-in .3s;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-color: var(--color-white);
+
 }
