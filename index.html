@@ -38,7 +38,7 @@
                 <p>With expertise in HTML5, CSS3, JavaScript, Node.js, WordPress, PHP, React, Vue.js, Python, and Google Analytics 4, I am well-prepared to tackle a wide range of development challenges. My certifications include CIW: Advanced HTML and CSS Specialist, Knowledge Pillars certifications in HTML/CSS, JavaScript, and PHP, Google Analytics 4, Adobe Photoshop, and Florida Soft Skills.</p>
             </div>
             <div>
-                <p>I am deeply passionate about breaking into the tech industry, continually expanding my knowledge through online boot camps and training. My goal is to leverage my skills and experience to provide seamless and innovative digital experiences.<br>When I'm not coding, you can find me exploring new technologies and staying updated with the latest industry trends. I am committed to delivering high-quality work and am excited to contribute to the ever-evolving world of technology.</p>
+                <p>I am deeply passionate about breaking into the tech industry, continually expanding my knowledge through online boot camps and training. My goal is to leverage my skills and experience to provide exceptional and innovative digital experiences.<br>When I'm not coding, you can find me exploring new technologies and staying updated with the latest industry trends. I am committed to delivering high-quality work and am excited to contribute to  the tech world.</p>
             </div>
             <div>
                 <p>Feel free to connect with me and follow along on my journey as I continue to grow and make my mark in the tech field.</p>
@@ -49,7 +49,21 @@
         </div>
         <div id="contact-container" class="active">
             <h2>Contact Me</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHZGnfs1gWV3op7W3LOvwQPGr7aC_TTxaM53aKnZjcMwGY7w/viewform?embedded=true" width="640" height="990" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <form id="contactForm" method="POST" action="contact.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+              
+                <label for="message">Brief Message:</label>
+                <textarea id="message" name="message" class="message-box" required></textarea>
+              
+                <button type="submit">Send Message</button>
+              </form>
         </div>
     </main>
 </body>
